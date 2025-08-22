@@ -59,7 +59,7 @@ interface RealNFTData {
   tokenId: string;
   owner: string;
   tokenURI: string;
-  metadata?: any;
+  metadata?: Record<string, unknown>;
 }
 
 interface HolderData {

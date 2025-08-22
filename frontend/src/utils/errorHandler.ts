@@ -37,8 +37,8 @@ export function formatTxHash(hash: string): string {
  * @param error 错误对象
  * @returns 格式化的错误详情
  */
-export function parseWalletError(error: any): ErrorDetails {
-  const errorMessage = error?.message || error?.toString() || '未知错误';
+export function parseWalletError(error: unknown): ErrorDetails {
+  const errorMessage = (error as Error)?.message || (error as { toString(): string })?.toString() || '未知错误';
   
   // 用户拒绝交易
   if (errorMessage.includes('User rejected') || errorMessage.includes('user rejected')) {
@@ -128,7 +128,7 @@ function extractRevertReason(errorMessage: string): string {
  * @param error 错误对象
  * @param customTitle 自定义标题
  */
-export function showErrorToast(error: any, customTitle?: string) {
+export function showErrorToast(error: unknown, customTitle?: string) {
   const errorDetails = parseWalletError(error);
   
   const title = customTitle || errorDetails.title;
@@ -214,7 +214,7 @@ export function dismissToast(id?: string) {
  * @param contractName 合约名称
  * @param functionName 函数名称
  */
-export function formatContractError(error: any, contractName: string, functionName: string): string {
+export function formatContractError(error: unknown, contractName: string, functionName: string): string {
   const errorDetails = parseWalletError(error);
   
   return `${contractName}.${functionName} 调用失败\n\n${errorDetails.message}\n\n${errorDetails.action || '请重试'}`;
@@ -225,8 +225,8 @@ export function formatContractError(error: any, contractName: string, functionNa
  * @param error 错误对象
  * @returns 是否为用户取消
  */
-export function isUserRejectedError(error: any): boolean {
-  const errorMessage = error?.message || error?.toString() || '';
+export function isUserRejectedError(error: unknown): boolean {
+  const errorMessage = (error as Error)?.message || (error as { toString(): string })?.toString() || '';
   return errorMessage.includes('User rejected') || errorMessage.includes('user rejected');
 }
 

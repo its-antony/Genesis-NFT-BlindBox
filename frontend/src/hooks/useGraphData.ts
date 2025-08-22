@@ -105,7 +105,7 @@ export function useGraphData() {
   // The Graph endpoint (需要部署subgraph)
   const GRAPH_ENDPOINT = process.env.NEXT_PUBLIC_GRAPH_ENDPOINT || '';
 
-  const executeQuery = async (query: string, variables: any = {}) => {
+  const executeQuery = async (query: string, variables: Record<string, unknown> = {}) => {
     if (!GRAPH_ENDPOINT) {
       throw new Error('Graph endpoint not configured');
     }
@@ -128,7 +128,7 @@ export function useGraphData() {
     const result = await response.json();
     
     if (result.errors) {
-      throw new Error(`Graph query errors: ${result.errors.map((e: any) => e.message).join(', ')}`);
+      throw new Error(`Graph query errors: ${result.errors.map((e: { message: string }) => e.message).join(', ')}`);
     }
 
     return result.data;

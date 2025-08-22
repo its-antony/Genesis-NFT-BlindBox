@@ -10,7 +10,7 @@ interface AlchemyNFT {
   description?: string;
   image?: string;
   tokenUri?: string;
-  metadata?: any;
+  metadata?: Record<string, unknown>;
   timeLastUpdated: string;
 }
 
@@ -56,15 +56,15 @@ export function useAlchemyData() {
 
       const data = await response.json();
       
-      const nfts: AlchemyNFT[] = data.ownedNfts.map((nft: any) => ({
-        tokenId: nft.tokenId,
-        tokenType: nft.tokenType,
-        name: nft.name || nft.metadata?.name,
-        description: nft.description || nft.metadata?.description,
-        image: nft.image?.originalUrl || nft.metadata?.image,
-        tokenUri: nft.tokenUri,
-        metadata: nft.metadata,
-        timeLastUpdated: nft.timeLastUpdated,
+      const nfts: AlchemyNFT[] = data.ownedNfts.map((nft: Record<string, unknown>) => ({
+        tokenId: nft.tokenId as string,
+        tokenType: nft.tokenType as string,
+        name: (nft.name as string) || ((nft.metadata as Record<string, unknown>)?.name as string),
+        description: (nft.description as string) || ((nft.metadata as Record<string, unknown>)?.description as string),
+        image: ((nft.image as Record<string, unknown>)?.originalUrl as string) || ((nft.metadata as Record<string, unknown>)?.image as string),
+        tokenUri: nft.tokenUri as string,
+        metadata: nft.metadata as Record<string, unknown>,
+        timeLastUpdated: nft.timeLastUpdated as string,
       }));
 
       setUserNFTs(nfts);
