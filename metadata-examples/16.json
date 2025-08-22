@@ -1,0 +1,95 @@
+{
+  "name": "麒麟圣盾 #016",
+  "description": "麒麟圣盾配备圣光护盾与治疗模块，擅长防御与支援，金白色涂装闪耀圣洁光辉，是团队的守护神。",
+  "image": "http://47.108.146.210:8889/tmp/16.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "稀有",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "守护型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 76,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 73,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 81,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 78,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "暗夜黑",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "钢铁蓝",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "流线纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "红色激光",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "量子枪",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "战术匕首",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "吸收护盾",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "重力操控",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "伤害减免",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 308,
+    "等级": "A级",
+    "出生地": "新东京",
+    "驾驶员等级": "老兵",
+    "世代": "创世"
+  }
+}

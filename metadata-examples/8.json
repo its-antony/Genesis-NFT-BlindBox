@@ -1,0 +1,95 @@
+{
+  "name": "玄武御海 #008",
+  "description": "玄武御海装备水下推进器和海啸炮，专精水下战斗，深蓝和墨绿色涂装使其在海洋中隐蔽。",
+  "image": "http://47.108.146.210:8889/tmp/8.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "普通",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "守护型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 71,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 75,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 67,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 68,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "黄金色",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "水晶青",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "蜂窝纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "紫色脉冲",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "脉冲步枪",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "震荡弹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "相位护盾",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "重力操控",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "反应提升",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 281,
+    "等级": "B级",
+    "出生地": "新东京",
+    "驾驶员等级": "新兵",
+    "世代": "创世"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "name": "黑曜天罚 #019",
+  "description": "黑曜天罚披覆黑曜石装甲，搭载等离子炮，具备极强防御和毁灭性攻击，黑暗风格与紫色光效震慑敌人。",
+  "image": "http://47.108.146.210:8889/tmp/19.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "史诗",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "守护型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 82,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 84,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 89,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 81,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "森林绿",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "电光黄",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "波浪纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "金色闪烁",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "脉冲步枪",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "震荡弹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "反射护盾",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "能量爆发",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "伤害减免",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 336,
+    "等级": "S级",
+    "出生地": "新东京",
+    "驾驶员等级": "精英",
+    "世代": "创世"
+  }
+}

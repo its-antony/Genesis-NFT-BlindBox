@@ -1,0 +1,95 @@
+{
+  "name": "凤羽流光 #015",
+  "description": "凤羽流光拥有翅状推进器与光束剑，灵动优雅，涂装以火红与金色交织，犹如凤凰飞舞。",
+  "image": "http://47.108.146.210:8889/tmp/15.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "稀有",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "重炮型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 72,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 71,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 85,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 80,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "森林绿",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "暗影灰",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "波浪纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "白色聚焦",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "量子枪",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "导弹发射器",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "吸收护盾",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "重力操控",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "能量回复",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 308,
+    "等级": "A级",
+    "出生地": "新东京",
+    "驾驶员等级": "老兵",
+    "世代": "创世"
+  }
+}

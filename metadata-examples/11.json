@@ -1,0 +1,95 @@
+{
+  "name": "燎原烈焰 #011",
+  "description": "燎原烈焰能释放火焰喷射，配备地形燃烧系统，擅长大规模破坏，火红与橙色相间的装甲犹如燃烧的火焰。",
+  "image": "http://47.108.146.210:8889/tmp/11.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "稀有",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "守护型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 81,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 79,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 71,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 84,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "深海蓝",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "暗影灰",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "流线纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "紫色脉冲",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "粒子束",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "震荡弹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "能量屏障",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "隐身模式",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "能量回复",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 315,
+    "等级": "A级",
+    "出生地": "新东京",
+    "驾驶员等级": "老兵",
+    "世代": "创世"
+  }
+}

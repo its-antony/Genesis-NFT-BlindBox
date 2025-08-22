@@ -1,0 +1,95 @@
+{
+  "name": "白虎裂空 #007",
+  "description": "白虎裂空具备虎纹护甲与空中制导系统，适合高空作战，涂装融合白色与橙色，威猛迅捷。",
+  "image": "http://47.108.146.210:8889/tmp/7.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "普通",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "守护型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 74,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 71,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 71,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 73,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "暗夜黑",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "钢铁蓝",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "几何纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "金色闪烁",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "粒子束",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "战术匕首",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "能量屏障",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "能量爆发",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "自动修复",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 289,
+    "等级": "B级",
+    "出生地": "新东京",
+    "驾驶员等级": "新兵",
+    "世代": "创世"
+  }
+}

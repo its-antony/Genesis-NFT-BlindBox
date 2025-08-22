@@ -1,0 +1,95 @@
+{
+  "name": "青锋逐月 #006",
+  "description": "青锋逐月轻巧灵活，装备轻型刀锋与隐形系统，擅长夜间突袭与侦察任务，涂装以青蓝色为主，极具隐匿性。",
+  "image": "http://47.108.146.210:8889/tmp/6.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "普通",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "突击型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 69,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 63,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 65,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 66,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "纯净白",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "电光黄",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "几何纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "蓝色光芒",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "量子枪",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "能量剑",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "吸收护盾",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "冲锋突击",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "护甲强化",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 263,
+    "等级": "B级",
+    "出生地": "新东京",
+    "驾驶员等级": "新兵",
+    "世代": "创世"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "name": "龙鳞天戈 #014",
+  "description": "龙鳞天戈拥有坚固的龙鳞护甲和长戈武器，适合近战肉搏，深绿与金色的装甲闪耀着龙的威严。",
+  "image": "http://47.108.146.210:8889/tmp/14.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "稀有",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "突击型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 75,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 76,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 85,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 76,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "黄金色",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "暗影灰",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "几何纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "红色激光",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "脉冲步枪",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "电磁炮",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "反射护盾",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "时间膨胀",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "能量回复",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 312,
+    "等级": "A级",
+    "出生地": "新东京",
+    "驾驶员等级": "老兵",
+    "世代": "创世"
+  }
+}

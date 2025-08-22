@@ -1,0 +1,95 @@
+{
+  "name": "寒霜破锋 #002",
+  "description": "寒霜破锋是寒域之王，配备冰晶刀锋与冷冻炮，能瞬间冻结敌人行动。银白与冰蓝的装甲在雪地中几乎隐形。",
+  "image": "http://47.108.146.210:8889/tmp/2.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "普通",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "疾风型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 62,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 74,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 75,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 75,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "深海蓝",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "玫瑰金",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "龙鳞纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "绿色扫描",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "激光剑",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "导弹发射器",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "能量屏障",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "冲锋突击",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "能量回复",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 286,
+    "等级": "B级",
+    "出生地": "新东京",
+    "驾驶员等级": "新兵",
+    "世代": "创世"
+  }
+}

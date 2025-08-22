@@ -1,0 +1,95 @@
+{
+  "name": "日耀金轮 #018",
+  "description": "日耀金轮装备光能环刃和太阳能炮，橙金色装甲闪耀如日光，具备强大光能攻击和防御能力，象征光明与力量。",
+  "image": "http://47.108.146.210:8889/tmp/18.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "史诗",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "突击型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 82,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 83,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 87,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 94,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "深海蓝",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "银河紫",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "龙鳞纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "蓝色光芒",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "激光剑",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "能量剑",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "基础护盾",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "冲锋突击",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "反应提升",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 346,
+    "等级": "S级",
+    "出生地": "新东京",
+    "驾驶员等级": "精英",
+    "世代": "创世"
+  }
+}

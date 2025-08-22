@@ -1,0 +1,95 @@
+{
+  "name": "墨影无声 #010",
+  "description": "墨影无声专精隐匿与暗杀，隐匿涂层和暗杀光刃让它在黑暗中无声无息地击杀敌人，黑灰配色令其融入阴影。",
+  "image": "http://47.108.146.210:8889/tmp/10.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "普通",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "重炮型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 71,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 63,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 68,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 63,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "黄金色",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "电光黄",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "闪电纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "白色聚焦",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "等离子炮",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "能量剑",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "相位护盾",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "重力操控",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "护甲强化",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 265,
+    "等级": "B级",
+    "出生地": "新东京",
+    "驾驶员等级": "新兵",
+    "世代": "创世"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "name": "创世机甲 #001",
+  "description": "创世机甲是机甲纪元的开端，这台疾风型机甲拥有均衡的战斗能力，是新手驾驶员的理想选择。森林绿的涂装彰显着它的可靠性。",
+  "image": "http://47.108.146.210:8889/tmp/1.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "普通",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "疾风型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 61,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 74,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 64,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 71,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "森林绿",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "水晶青",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "闪电纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "绿色扫描",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "激光剑",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "导弹发射器",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "吸收护盾",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "空间跳跃",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "反应提升",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 270,
+    "等级": "B级",
+    "出生地": "新东京",
+    "驾驶员等级": "新兵",
+    "世代": "创世"
+  }
+}

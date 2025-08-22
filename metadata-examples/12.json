@@ -1,0 +1,95 @@
+{
+  "name": "雪域神锤 #012",
+  "description": "雪域神锤装备冰晶大锤和寒气护盾，是冰雪战场的守护者，白蓝配色寒气逼人，震慑敌军。",
+  "image": "http://47.108.146.210:8889/tmp/12.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "稀有",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "守护型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 71,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 77,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 76,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 79,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "烈焰红",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "水晶青",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "蜂窝纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "蓝色光芒",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "粒子束",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "战术匕首",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "相位护盾",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "冲锋突击",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "护甲强化",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 303,
+    "等级": "A级",
+    "出生地": "新东京",
+    "驾驶员等级": "老兵",
+    "世代": "创世"
+  }
+}

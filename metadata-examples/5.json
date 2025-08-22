@@ -1,0 +1,95 @@
+{
+  "name": "紫电游隼 #005",
+  "description": "紫电游隼速度极快，搭载高速推进器与光束炮，在空中如同闪电般划过天际，拥有极强的机动能力。",
+  "image": "http://47.108.146.210:8889/tmp/5.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "普通",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "疾风型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 69,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 66,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 74,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 74,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "森林绿",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "暗影灰",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "龙鳞纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "绿色扫描",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "等离子炮",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "震荡弹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "能量屏障",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "隐身模式",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "伤害减免",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 283,
+    "等级": "B级",
+    "出生地": "新东京",
+    "驾驶员等级": "新兵",
+    "世代": "创世"
+  }
+}

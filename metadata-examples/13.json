@@ -1,0 +1,95 @@
+{
+  "name": "天罡战鼓 #013",
+  "description": "天罡战鼓配备声波冲击炮和震荡装甲，能够发出震耳欲聋的声波攻击，装甲上有战鼓图案，威严霸气。",
+  "image": "http://47.108.146.210:8889/tmp/13.png",
+  "attributes": [
+    {
+      "trait_type": "稀有度",
+      "value": "稀有",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "机甲类型",
+      "value": "守护型",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "攻击力",
+      "value": 70,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "防御力",
+      "value": 75,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "速度",
+      "value": 76,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "能量",
+      "value": 85,
+      "display_type": "number",
+      "max_value": 100
+    },
+    {
+      "trait_type": "主色调",
+      "value": "暗夜黑",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副色调",
+      "value": "玫瑰金",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "装甲纹理",
+      "value": "蜂窝纹",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "眼部光效",
+      "value": "绿色扫描",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "主武器",
+      "value": "等离子炮",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "副武器",
+      "value": "光束刃",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "护盾类型",
+      "value": "量子护盾",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "特殊技能",
+      "value": "空间跳跃",
+      "display_type": "string"
+    },
+    {
+      "trait_type": "被动技能",
+      "value": "能量回复",
+      "display_type": "string"
+    }
+  ],
+  "properties": {
+    "版本": "1.0",
+    "创建日期": "2024-01-01",
+    "总战力": 306,
+    "等级": "A级",
+    "出生地": "新东京",
+    "驾驶员等级": "老兵",
+    "世代": "创世"
+  }
+}
