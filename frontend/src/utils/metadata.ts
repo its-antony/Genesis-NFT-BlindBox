@@ -18,7 +18,7 @@ export interface MetadataFetchOptions {
 export async function fetchNFTMetadata(
   tokenURI: string, 
   options: MetadataFetchOptions = {}
-): Promise<any> {
+): Promise<Record<string, unknown>> {
   const { timeout = 10000, retries = 2, cache = true } = options;
 
   if (!tokenURI) {
@@ -33,7 +33,7 @@ export async function fetchNFTMetadata(
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
       let fetchUrl: string;
-      let fetchOptions: RequestInit = {
+      const fetchOptions: RequestInit = {
         method: 'GET',
         headers: {
           'Accept': 'application/json',
@@ -110,8 +110,8 @@ export async function fetchNFTMetadataBatch(
   tokenURIs: string[],
   options: MetadataFetchOptions = {},
   concurrency: number = 3
-): Promise<Array<{tokenURI: string, metadata: any | null, error?: string}>> {
-  const results: Array<{tokenURI: string, metadata: any | null, error?: string}> = [];
+): Promise<Array<{tokenURI: string, metadata: Record<string, unknown> | null, error?: string}>> {
+  const results: Array<{tokenURI: string, metadata: Record<string, unknown> | null, error?: string}> = [];
   
   // 分批处理，控制并发数
   for (let i = 0; i < tokenURIs.length; i += concurrency) {
@@ -139,7 +139,7 @@ export async function fetchNFTMetadataBatch(
  * @param metadata - 元数据对象
  * @returns boolean - 是否有效
  */
-export function validateNFTMetadata(metadata: any): boolean {
+export function validateNFTMetadata(metadata: Record<string, unknown>): boolean {
   if (!metadata || typeof metadata !== 'object') {
     return false;
   }

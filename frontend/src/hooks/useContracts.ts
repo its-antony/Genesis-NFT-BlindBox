@@ -146,18 +146,19 @@ export function useBlindBoxInfo() {
     },
   });
 
-  const paused = useReadContract({
-    address: CONTRACT_ADDRESSES.BLIND_BOX as `0x${string}`,
-    abi: BLIND_BOX_ABI,
-    functionName: 'paused',
-    query: {
-      enabled: !!CONTRACT_ADDRESSES.BLIND_BOX,
-    },
-  });
+  // Note: BlindBox contract doesn't have a paused function in the current ABI
+  // const paused = useReadContract({
+  //   address: CONTRACT_ADDRESSES.BLIND_BOX as `0x${string}`,
+  //   abi: BLIND_BOX_ABI,
+  //   functionName: 'paused',
+  //   query: {
+  //     enabled: !!CONTRACT_ADDRESSES.BLIND_BOX,
+  //   },
+  // });
 
   return {
     mintPrice,
-    paused,
+    // paused: undefined, // Not available in current ABI
   };
 }
 

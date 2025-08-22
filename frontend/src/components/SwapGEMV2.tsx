@@ -94,7 +94,7 @@ export function SwapGEMV2() {
         <h2 className="text-2xl font-bold text-white mb-4">🔗 连接钱包</h2>
         <p className="text-gray-400 mb-6">请先连接钱包以开始交换</p>
         <div className="text-yellow-400">
-          点击右上角的"连接钱包"按钮
+          点击右上角的&ldquo;连接钱包&rdquo;按钮
         </div>
       </div>
     );

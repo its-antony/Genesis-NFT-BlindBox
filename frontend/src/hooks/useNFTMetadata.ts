@@ -62,7 +62,7 @@ export function useNFTMetadata() {
 
   // 当用户余额变化时，生成tokenId列表
   useEffect(() => {
-    if (!address || !isConnected || !userBalance || userBalance === 0n) {
+    if (!address || !isConnected || !userBalance || userBalance === BigInt(0)) {
       setUserTokenIds([]);
       setLoadedMetadata({});
       return;
@@ -114,8 +114,8 @@ export function useNFTMetadata() {
   return {
     userTokenIds,
     loadedMetadata,
-    userBalance: userBalance || 0n,
-    totalSupply: totalSupply || 0n,
+    userBalance: userBalance || BigInt(0),
+    totalSupply: totalSupply || BigInt(0),
     loading: false, // 现在由NFTCard组件处理加载状态
     error: null,
     handleMetadataLoaded,

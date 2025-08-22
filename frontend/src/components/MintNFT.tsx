@@ -76,7 +76,7 @@ export function MintNFT() {
   });
 
   // 计算总价格
-  const totalPrice = mintPrice ? mintPrice * BigInt(mintAmount) : 0n;
+  const totalPrice = mintPrice ? mintPrice * BigInt(mintAmount) : BigInt(0);
   
   // 检查用户余额和授权
   const hasEnoughBalance = userInfo?.gemBalance && userInfo.gemBalance >= totalPrice;
@@ -165,9 +165,9 @@ export function MintNFT() {
       setIsMinting(false);
       console.error('❌ 铸造失败详细信息:', {
         error,
-        message: error?.message,
-        cause: error?.cause,
-        stack: error?.stack
+        message: (error as Error)?.message,
+        cause: (error as Error)?.cause,
+        stack: (error as Error)?.stack
       });
 
       // 如果不是用户取消，则显示错误信息

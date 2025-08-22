@@ -111,7 +111,7 @@ export function useRealNFTData() {
 
   // 获取用户的NFT详情
   const fetchUserNFTs = async () => {
-    if (!address || !userBalance || !publicClient || userBalance === 0n) {
+    if (!address || !userBalance || !publicClient || userBalance === BigInt(0)) {
       setUserNFTs([]);
       return;
     }
@@ -240,7 +240,7 @@ export function useRealNFTData() {
     try {
       // 获取最近1000个区块的Transfer事件
       const currentBlock = await publicClient.getBlockNumber();
-      const fromBlock = currentBlock - 1000n;
+      const fromBlock = currentBlock - BigInt(1000);
 
       const logs = await publicClient.getLogs({
         address: GENESIS_MECHA_ADDRESS,
@@ -261,7 +261,7 @@ export function useRealNFTData() {
         from: log.args.from as string,
         to: log.args.to as string,
         tokenId: log.args.tokenId?.toString() || '',
-        blockNumber: log.blockNumber || 0n,
+        blockNumber: log.blockNumber || BigInt(0),
         transactionHash: log.transactionHash || '',
       }));
 

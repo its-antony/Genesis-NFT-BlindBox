@@ -35,7 +35,7 @@ export function useUniswapV2Price(
   const WETH_ADDRESS = (process.env.NEXT_PUBLIC_WETH_ADDRESS || "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14") as `0x${string}`;
   const GEM_ADDRESS = (process.env.NEXT_PUBLIC_GEM_TOKEN_ADDRESS || "0xe59E7f631DCf9cD76119252c3aAD396bE48F31af") as `0x${string}`;
 
-  const inputAmountWei = ethAmount && parseFloat(ethAmount) > 0 ? parseEther(ethAmount) : 0n;
+  const inputAmountWei = ethAmount && parseFloat(ethAmount) > 0 ? parseEther(ethAmount) : BigInt(0);
 
   // 使用Uniswap V2 Router的getAmountsOut函数
   const { data: amountsData, isLoading, error } = useReadContract({

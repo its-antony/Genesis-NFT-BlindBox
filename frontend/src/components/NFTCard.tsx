@@ -58,7 +58,7 @@ export function NFTCard({ tokenId, onMetadataLoaded }: NFTCardProps) {
         // console.log(`🔍 NFT ${tokenId} tokenURI:`, currentTokenURI);
 
         // 使用统一的元数据获取工具函数
-        const metadataJson: ChineseNFTMetadata = await fetchNFTMetadata(currentTokenURI, {
+        const metadataJson = await fetchNFTMetadata(currentTokenURI, {
           timeout: 15000, // 15秒超时
           retries: 2,     // 重试2次
           cache: true     // 启用缓存
@@ -66,11 +66,11 @@ export function NFTCard({ tokenId, onMetadataLoaded }: NFTCardProps) {
 
         // console.log(`✅ NFT ${tokenId} 元数据获取成功:`, metadataJson.name);
 
-        setMetadata(metadataJson);
+        setMetadata(metadataJson as unknown as ChineseNFTMetadata);
         setLoading(false);
 
         // 通知父组件元数据已加载
-        stableOnMetadataLoaded(tokenId, metadataJson);
+        stableOnMetadataLoaded(tokenId, metadataJson as unknown as ChineseNFTMetadata);
 
       } catch (err) {
         console.error(`❌ NFT ${tokenId} 元数据获取失败:`, err);

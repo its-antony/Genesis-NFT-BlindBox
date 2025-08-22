@@ -5,7 +5,7 @@ import { fetchNFTMetadata } from '@/utils/metadata';
 
 export default function TestCorsPage() {
   const [testUrl, setTestUrl] = useState('http://47.108.146.210:8889/tmp/1.json');
-  const [result, setResult] = useState<any>(null);
+  const [result, setResult] = useState<Record<string, unknown> | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 

@@ -235,7 +235,7 @@ export function isUserRejectedError(error: unknown): boolean {
  * @param error 错误对象
  * @returns 简短描述
  */
-export function getErrorSummary(error: any): string {
+export function getErrorSummary(error: unknown): string {
   const errorDetails = parseWalletError(error);
   return errorDetails.title;
 }

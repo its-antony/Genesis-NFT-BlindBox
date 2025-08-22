@@ -92,9 +92,9 @@ export function useAlchemyData() {
 
       const data = await response.json();
       
-      const ownersData: AlchemyOwner[] = data.owners.map((owner: any) => ({
-        ownerAddress: owner.ownerAddress,
-        tokenBalances: owner.tokenBalances || [],
+      const ownersData: AlchemyOwner[] = data.owners.map((owner: Record<string, unknown>) => ({
+        ownerAddress: owner.ownerAddress as string,
+        tokenBalances: (owner.tokenBalances as Array<{ tokenId: string; balance: string }>) || [],
       }));
 
       // 按持有数量排序

@@ -12,7 +12,7 @@ interface LeaderboardEntry {
   epicCount: number;
   rareCount: number;
   commonCount: number;
-  nfts: any[]; // 持有的NFT详情
+  nfts: string[]; // 持有的NFT tokenId列表
 }
 
 
@@ -50,35 +50,38 @@ export function Leaderboard() {
         let rareCount = 0;
         let commonCount = 0;
 
-        nfts.forEach((nft: any) => {
-          if (nft.metadata?.attributes) {
-            const rarityAttr = nft.metadata.attributes.find(
-              (attr: any) => attr.trait_type === '稀有度'
-            );
-            const rarity = rarityAttr?.value;
+        // 注意：这里的nfts是tokenId数组，不是NFT对象
+        // 在实际应用中，需要根据tokenId获取元数据来判断稀有度
+        // 这里简化处理，根据tokenId模拟稀有度分布
+        nfts.forEach((tokenId: string) => {
+          // 简化的稀有度判断逻辑（基于tokenId）
+          const id = parseInt(tokenId);
+          let rarity: string;
 
-            switch (rarity) {
-              case '传说':
-                legendaryCount++;
-                break;
-              case '史诗':
-                epicCount++;
-                break;
-              case '稀有':
-                rareCount++;
-                break;
-              case '普通':
-              default:
-                commonCount++;
-                break;
-            }
+          if (id === 1) {
+            rarity = 'Legendary';
+          } else if (id >= 2 && id <= 4) {
+            rarity = 'Epic';
+          } else if (id >= 5 && id <= 9) {
+            rarity = 'Rare';
           } else {
-            // 如果没有元数据，按概率分布估算
-            const rand = Math.random();
-            if (rand < 0.05) legendaryCount++;
-            else if (rand < 0.20) epicCount++;
-            else if (rand < 0.45) rareCount++;
-            else commonCount++;
+            rarity = 'Common';
+          }
+
+          switch (rarity) {
+            case 'Legendary':
+              legendaryCount++;
+              break;
+            case 'Epic':
+              epicCount++;
+              break;
+            case 'Rare':
+              rareCount++;
+              break;
+            case 'Common':
+            default:
+              commonCount++;
+              break;
           }
         });
 
@@ -275,7 +278,7 @@ export function Leaderboard() {
             ].map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id as any)}
+                onClick={() => setActiveTab(tab.id as 'holders' | 'stats')}
                 className={`px-6 py-3 rounded-lg text-sm font-medium transition-all duration-200 flex items-center space-x-2 ${
                   activeTab === tab.id
                     ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
