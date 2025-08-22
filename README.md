@@ -246,17 +246,138 @@ cd frontend
 yarn dev:sepolia
 ```
 
-### 🚀 生产部署
+### 🚀 Vercel部署 (推荐)
+
+#### 方法一：通过Vercel CLI部署
+
+1. **安装Vercel CLI**
+```bash
+npm i -g vercel
+```
+
+2. **登录Vercel**
+```bash
+vercel login
+```
+
+3. **部署项目**
+```bash
+cd frontend
+vercel --prod
+```
+
+4. **配置构建设置**
+在部署过程中，Vercel会询问配置，请按以下设置：
+- **Build Command**: `yarn build:sepolia`
+- **Output Directory**: `.next`
+- **Install Command**: `yarn install --ignore-engines`
+
+#### 方法二：通过Vercel Dashboard部署
+
+1. **连接GitHub仓库**
+   - 访问 [vercel.com](https://vercel.com)
+   - 点击 "New Project"
+   - 导入您的GitHub仓库
+
+2. **配置项目设置**
+   ```
+   Framework Preset: Next.js
+   Root Directory: frontend
+   Build Command: yarn build:sepolia
+   Output Directory: .next
+   Install Command: yarn install --ignore-engines
+   ```
+
+3. **设置环境变量**
+   在 Project Settings → Environment Variables 中添加：
+   ```bash
+   NEXT_PUBLIC_GEM_TOKEN_ADDRESS=0xe59E7f631DCf9cD76119252c3aAD396bE48F31af
+   NEXT_PUBLIC_GENESIS_MECHA_ADDRESS=0x81b69A8d41345DBdb9eCee61d0eBB3921db39D66
+   NEXT_PUBLIC_BLIND_BOX_ADDRESS=0xd7208262e716586661F19893Ab457C5De4a209DF
+   NEXT_PUBLIC_UNISWAP_V2_ROUTER=0xeE567Fe1712Faf6149d80dA1E6934E354124CfE3
+   NEXT_PUBLIC_UNISWAP_V2_FACTORY=0xF62c03E08ada871A0bEb309762E260a7a6a880E6
+   NEXT_PUBLIC_WETH_ADDRESS=0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14
+   NEXT_PUBLIC_CHAIN_ID=11155111
+   NEXT_PUBLIC_RPC_URL=https://sepolia.infura.io/v3/YOUR_INFURA_KEY
+   ```
+
+4. **部署**
+   - 点击 "Deploy" 开始部署
+   - 等待构建完成（约2-3分钟）
+
+#### 🔧 部署配置详解
+
+| 配置项 | 值 | 说明 |
+|--------|-----|------|
+| **Framework** | Next.js | 自动检测 |
+| **Root Directory** | `frontend` | 前端代码目录 |
+| **Build Command** | `yarn build:sepolia` | 使用Sepolia环境构建 |
+| **Output Directory** | `.next` | Next.js默认输出目录 |
+| **Install Command** | `yarn install --ignore-engines` | 忽略引擎版本检查 |
+| **Node.js Version** | 22.x | Hardhat v3要求 |
+
+#### 🌍 环境变量说明
+
+| 变量名 | 描述 | 示例值 |
+|--------|------|--------|
+| `NEXT_PUBLIC_GEM_TOKEN_ADDRESS` | GEM代币合约地址 | `0xe59E7f...` |
+| `NEXT_PUBLIC_GENESIS_MECHA_ADDRESS` | NFT合约地址 | `0x81b69A...` |
+| `NEXT_PUBLIC_BLIND_BOX_ADDRESS` | 盲盒合约地址 | `0xd72082...` |
+| `NEXT_PUBLIC_UNISWAP_V2_ROUTER` | Uniswap V2路由地址 | `0xeE567F...` |
+| `NEXT_PUBLIC_UNISWAP_V2_FACTORY` | Uniswap V2工厂地址 | `0xF62c03...` |
+| `NEXT_PUBLIC_WETH_ADDRESS` | WETH代币地址 | `0xfFf997...` |
+| `NEXT_PUBLIC_CHAIN_ID` | 网络链ID (Sepolia) | `11155111` |
+| `NEXT_PUBLIC_RPC_URL` | RPC节点URL | `https://sepolia.infura.io/v3/...` |
+
+#### ✅ 部署成功验证
+
+部署完成后，访问Vercel提供的URL，检查以下功能：
+
+- [ ] 页面正常加载
+- [ ] 钱包连接功能正常
+- [ ] 合约地址显示正确
+- [ ] 网络切换到Sepolia
+- [ ] NFT展示功能正常
+
+#### 🔄 自动部署
+
+配置完成后，每次推送到GitHub主分支都会自动触发Vercel重新部署。
+
+#### 🛠️ 故障排除
+
+**常见问题及解决方案：**
+
+1. **构建失败 - TypeScript错误**
+   ```bash
+   # 本地测试构建
+   cd frontend
+   yarn build:sepolia
+   ```
+
+2. **环境变量未生效**
+   - 确保变量名以 `NEXT_PUBLIC_` 开头
+   - 检查Vercel Dashboard中的环境变量设置
+   - 重新部署项目
+
+3. **钱包连接失败**
+   - 检查 `NEXT_PUBLIC_CHAIN_ID` 是否正确
+   - 确认RPC URL可访问
+
+4. **合约交互失败**
+   - 验证合约地址是否正确
+   - 确认合约已部署到Sepolia网络
+
+### 🚀 其他部署选项
 
 #### 合约部署
 - 使用主网RPC配置
 - 确保充足的ETH余额支付Gas费
 - 验证合约代码
 
-#### 前端部署
-- 推荐使用Vercel部署
-- 配置生产环境变量
-- 设置自定义域名
+#### 其他前端部署平台
+- **Netlify**: 支持Next.js静态导出
+- **AWS Amplify**: 企业级部署方案
+- **自托管**: 使用Docker容器化部署
 
 ## 📊 技术栈
 
